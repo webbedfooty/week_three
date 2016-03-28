@@ -2,21 +2,18 @@
 require "pry"
 
 class Car
-  attr_accessor :maker
+  attr_accessor :maker, :model, :year
 
-  def initialize(options={})
-    @maker  = options[:maker]
-    @model  = options[:model]
-    @year   = options[:year]
+  def initialize(maker:, model:, year:)
+    @maker  = maker
+    @model  = model
+    @year   = year
   end
 
   def model
     @model
   end
 
-  def year =(new_year)
-    @year = new_year unless new_year < 2000
-  end
 end
 
-#binding.pry
+binding.pry
