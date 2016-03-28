@@ -1,6 +1,6 @@
 #car test
 require "test_helper"
-require_relative "../lib/car.rb"
+require_relative "../lib/Car.rb"
 
 class CarTest < Minitest::Test
 
